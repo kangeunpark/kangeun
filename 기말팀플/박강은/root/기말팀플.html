@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            /* body 스타일 */
+            body {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: white;
+                text-align: center;
+            }
+
+            /* header 스타일 */
+            header {
+                padding: 15px;
+            }
+
+            header h1 {
+                margin: 0;
+                font-size: 1.8em;
+                text-decoration: underline; /* 밑줄 추가 */
+                color: black; /* 텍스트 색상을 흰색으로 설정 */
+            }
+
+            /* map 섹션 스타일 */
+            #map_part {
+                padding: 20px;
+            }
+
+            #map {
+                border: 2px solid white;
+                width: 80%;
+                max-width: 800px;
+                height: 400px;
+                margin: 0 auto; /* 가운데 정렬 */
+            }
+
+            /* photo 섹션 스타일 */
+            #photo_part {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 20px;
+                padding: 20px;
+                flex-wrap: wrap;
+            }
+
+            .mini_photo {
+                width: 30%;
+                max-width: 300px;
+                background-color: white;
+                overflow: hidden;
+                text-align: center;
+                border: 1px solid lightgrey;
+            }
+
+            .mini_photo img {
+                width: 100%; /* 부모 div에 맞게 이미지 폭을 채움 */
+                height: 200px; /* 사진 높이를 동일하게 설정 */
+                object-fit: cover; /* 비율 유지하며 크기 조정 */
+            }
+
+            .mini_photo h3 {
+                margin: 10px 0;
+                font-size: 1.2em;
+            }
+
+            .mini_photo p {
+                color: #555;
+                font-size: 0.9em;
+            }
+
+            /* 링크 색상 스타일 */
+            a:link {
+                color: #555;
+            }
+
+            a:visited {
+                color: #2b2a2a;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- header 부분 -->
+        <header>
+            <h1>한동대학교 근처 포항 북구 병원</h1>
+        </header>
+
+        <!-- map 섹션 -->
+        <section id="map_part">
+            <img id="map" src="./이미지/포항북구 지도.jpg" alt="포항북구 지도">
+        </section>
+        <hr size="2" width="100%" color="#dddddd">
+
+        <!-- photo 섹션 -->
+        <section id="photo_part">
+            <!-- 좋은 선린 병원 -->
+            <div class="mini_photo">
+                <img src="./이미지/좋은선린병원1.jpg" alt="좋은 선린 병원 사진">
+                <h3><a href="./tem1/좋은 선린 병원.html">좋은 선린 병원</a></h3>
+                <p>경북 포항시 북구 대신로 43</p>
+            </div>
+
+            <!-- 경상북도 포항 의료원 -->
+            <div class="mini_photo">
+                <img src="./이미지/경상북도포항의료원1.jpg" alt="경상북도 포항 의료원">
+                <h3><a href="./tem1/경상북도 포항 의료원.html">경상북도 포항 의료원</a></h3>
+                <p>경북 포항시 북구 용흥로 36</p>
+            </div>
+
+            <!-- 포항시 북구 보건소 -->
+            <div class="mini_photo">
+                <img src="./이미지/포항시 북구 보건소1.jpg" alt="포항시 북구 보건소">
+                <h3><a href="./tem1/포항시 북구 보건소.html">포항시 북구 보건소</a></h3>
+                <p>경북 포항시 북구 대신로 43</p>
+            </div>
+        </section>
+    </body>
+</html>

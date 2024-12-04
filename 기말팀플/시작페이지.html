@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            /* body 스타일 */
+            body {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: white;
+                text-align: center;
+            }
+
+            /* header 스타일 */
+            header {
+                background-color: white; 
+                padding: 15px;
+                position: relative; /* 위치 설정을 위한 상대 위치 */
+            }
+
+            header h1 {
+                margin: 0;
+                font-size: 1.8em;
+                text-decoration: underline; /* 밑줄 추가 */
+                color: black; /* 텍스트 색상을 흰색으로 변경 */
+            }
+
+            /* 조원 정보 스타일 */
+            #team_info {
+                position: absolute; /* header 내부의 절대 위치 */
+                top: 10px;
+                right: 20px;
+                font-size: 0.9em;
+                color: black;
+            }
+
+            /* map 섹션 스타일 */
+            #map_part {
+                padding: 20px;
+            }
+
+            #map {
+                border: 2px solid white;
+                width: 80%;
+                max-width: 800px;
+                height: 400px;
+                margin: 0 auto; /* 가운데 정렬 */
+            }
+
+            /* photo 섹션 스타일 */
+            #photo_part {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 20px;
+                padding: 20px;
+                flex-wrap: wrap;
+            }
+
+            .mini_photo {
+                width: 30%;
+                max-width: 300px;
+                background-color:  white;
+                overflow: hidden;
+                text-align: center;
+                border: 1px solid lightgrey;
+            }
+
+            .mini_photo img {
+                width: 100%; /* 부모 div에 맞게 이미지 폭을 채움 */
+                height: 200px; /* 동일한 높이로 설정 */
+                object-fit: cover; /* 비율 유지하며 잘림 */
+            }
+
+            .mini_photo h3 {
+                margin: 10px 0;
+                font-size: 1.2em;
+            }
+
+            .mini_photo p {
+                color: #555;
+            }
+
+            /* 링크 색상 스타일 */
+            a:link {
+                color: #555;
+            }
+
+            a:visited {
+                color: #2b2a2a;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- header 부분 -->
+        <header>
+            <h1>한동대생을 위한 포항북구 편의시설!</h1>
+            <div id="team_info">조원 - 박강은, 이예서, 유재영, 김은혜</div>
+        </header>
+
+        <!-- map 섹션 -->
+        <section id="map_part">
+            <img id="map" src="./이미지/한동대학교.png" alt="포항북구 지도">
+        </section>
+        <hr size="2" width="100%" color="#dddddd">
+
+        <!-- photo 섹션 -->
+        <section id="photo_part">
+            <!-- 북구 맛집 -->
+            <div class="mini_photo">
+                <img src="./이미지/맛집.jpg" alt="맛집 사진">
+                <h3><a href="./김은혜/res1.html">북구 맛집</a></h3>
+            </div>
+
+            <!-- 북구 카페 -->
+            <div class="mini_photo">
+                <img src="./이미지/카페.jpg" alt="카페 사진">
+                <h3><a href="./유재영/cafe (1).html">북구 카페</a></h3>
+            </div>
+
+            <!-- 북구 관광지 -->
+            <div class="mini_photo">
+                <img src="./이미지/관광지.png" alt="관광지 사진">
+                <h3><a href="./이예서/root/포항 북구 관광지.html">북구 관광지</a></h3>
+            </div>
+
+            <!-- 북구 병원 -->
+            <div class="mini_photo">
+                <img src="./이미지/병원.jpg" alt="병원 사진">
+                <h3><a href="./박강은/root/기말팀플.html">북구 병원</a></h3>
+            </div>
+        </section>
+    </body>
+</html>
+
+
+
+
+
+
+
